@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — PrayNow</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1d1d1f;
+            --muted: #6e6e73;
+            --accent: #0071e3;
+            --border: #e5e5ea;
+            --card-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #f5f5f7;
+                --muted: #a1a1a6;
+                --accent: #2997ff;
+                --border: #38383a;
+                --card-bg: #1c1c1e;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        .effective-date {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: var(--fg);
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 8px; }
+        .highlight-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+        }
+        .highlight-card p { margin-bottom: 0; }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: February 22, 2026</p>
+
+        <div class="highlight-card">
+            <p><strong>In short:</strong> PrayNow does not sell your data. We only collect what is strictly necessary to deliver accurate prayer times and notifications. Your data stays on your device or in your personal iCloud account.</p>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p>PrayNow collects minimal information to provide its core functionality:</p>
+        <ul>
+            <li><strong>Location Data</strong> — When you grant location permission, PrayNow uses your GPS coordinates to calculate accurate prayer times, determine the Qibla direction, and display your city name. You may also set your location manually instead.</li>
+            <li><strong>Background Location</strong> — If you enable "Always" location access, PrayNow monitors significant location changes so prayer times and notifications stay accurate when you travel. This runs entirely on-device.</li>
+            <li><strong>Push Notification Token</strong> — When you allow notifications, Apple assigns a device token. PrayNow sends this token to our server solely to deliver silent push notifications that keep your prayer time alerts up to date.</li>
+            <li><strong>Crash Reports (Optional)</strong> — If the app crashes, a crash log is saved on your device. You are given the option to send it to us via email. We never collect crash data automatically.</li>
+        </ul>
+
+        <h2>2. Information We Do Not Collect</h2>
+        <ul>
+            <li>We do not collect your name, email address, or account information.</li>
+            <li>We do not use analytics or third-party tracking SDKs.</li>
+            <li>We do not collect or access your contacts, photos, microphone, or camera.</li>
+            <li>We do not create advertising profiles or share data with ad networks.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <ul>
+            <li><strong>Prayer Time Calculations</strong> — Your location coordinates are used on-device to compute daily prayer times.</li>
+            <li><strong>Notifications</strong> — Your device token is registered with our server to enable silent push notifications that trigger background refresh of prayer schedules.</li>
+            <li><strong>Qibla Direction</strong> — Your coordinates are processed on-device to calculate the direction to the Kaaba.</li>
+        </ul>
+
+        <h2>4. Data Storage</h2>
+        <ul>
+            <li><strong>On-Device</strong> — All your preferences (prayer adjustments, notification settings, selected calendar, location choices, recent locations, appearance) are stored locally on your device using iOS built-in storage. No account or login is required.</li>
+            <li><strong>iCloud (Private)</strong> — If you use the Qadha (missed prayers) tracking feature, your Qadha records are synced across your Apple devices using Apple's CloudKit private database. This data is stored in your personal iCloud account and is not accessible to us or anyone else.</li>
+            <li><strong>Our Server</strong> — Only your push notification device token, platform identifier ("ios"), and app bundle ID are sent to our server for notification delivery. No location data or personal information is sent to our server.</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+        <ul>
+            <li><strong>Apple Push Notification Service (APNs)</strong> — Used to deliver notifications. Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+            <li><strong>Apple CloudKit</strong> — Used for Qadha data sync across your devices. Data resides in your personal iCloud account.</li>
+            <li><strong>Nominatim (OpenStreetMap)</strong> — Used when you manually search for a location. Only your search query is sent; no personal data is transmitted.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>PrayNow does not knowingly collect information from children under 13. The app does not require account creation or personal information of any kind.</p>
+
+        <h2>7. Data Retention</h2>
+        <p>Device tokens stored on our server are used solely for push notification delivery and are not linked to any personal identity. All other data is stored on your device or in your personal iCloud account and can be deleted at any time by uninstalling the app or clearing app data.</p>
+
+        <h2>8. Your Rights &amp; Choices</h2>
+        <ul>
+            <li>You can revoke location permission at any time in iOS Settings.</li>
+            <li>You can disable notifications at any time in iOS Settings.</li>
+            <li>You can use manual location entry instead of GPS.</li>
+            <li>You can delete all local data by uninstalling the app.</li>
+            <li>You can delete iCloud-synced Qadha data from your iCloud account.</li>
+        </ul>
+
+        <h2>9. Security</h2>
+        <p>We use standard security measures to protect information transmitted to our server. Communication with our server uses HTTPS encryption. iCloud data is protected by Apple's encryption standards.</p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this page periodically.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+        <p><a href="mailto:feedback@praynowapp.cc">feedback@praynowapp.cc</a></p>
+
+        <div class="footer">
+            <p>&copy; 2026 PrayNow. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
