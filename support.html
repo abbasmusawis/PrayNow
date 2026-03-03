@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — PrayNow</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1d1d1f;
+            --muted: #6e6e73;
+            --accent: #0071e3;
+            --border: #e5e5ea;
+            --card-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #f5f5f7;
+                --muted: #a1a1a6;
+                --accent: #2997ff;
+                --border: #38383a;
+                --card-bg: #1c1c1e;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: var(--fg);
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 8px; }
+        .highlight-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+        }
+        .highlight-card p { margin-bottom: 0; }
+        .contact-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 28px 24px;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        .contact-card .email-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .contact-card a {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .contact-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        details {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border);
+        }
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        details p {
+            margin-top: 12px;
+            margin-bottom: 0;
+            color: var(--muted);
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="subtitle">Need help with PrayNow? We're here for you.</p>
+
+        <!-- Contact -->
+        <div class="contact-card">
+            <div class="email-icon">✉️</div>
+            <a href="mailto:feedback@praynowapp.cc">feedback@praynowapp.cc</a>
+            <p>We typically respond within 24–48 hours.</p>
+        </div>
+
+        <!-- FAQ -->
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>Why are my prayer times slightly different from another app?</summary>
+            <p>PrayNow uses Shia-specific calculation methods (University of Tehran or Leva Research Institute, Qom). Different apps may use different methods, angles, or adjustments. You can change the calculation method in Settings → Calculation Method, and fine-tune individual prayer times with manual adjustments.</p>
+        </details>
+
+        <details>
+            <summary>How do I enable adhan notifications?</summary>
+            <p>Go to Settings → Adhan & Notifications. Enable the prayers you'd like to hear the adhan for, and select a recitation for each one. Make sure notifications are allowed in your iPhone's Settings → PrayNow → Notifications.</p>
+        </details>
+
+        <details>
+            <summary>The adhan doesn't play at prayer time. What should I check?</summary>
+            <p>Make sure: (1) Notifications are enabled in iOS Settings → PrayNow → Notifications, (2) your phone is not in Silent mode (the physical switch on the side), (3) "Time Sensitive Notifications" is allowed, and (4) you have selected an adhan for each prayer in Settings → Adhan & Notifications.</p>
+        </details>
+
+        <details>
+            <summary>Why does the app need my location?</summary>
+            <p>Prayer times and Qibla direction are calculated based on your geographic coordinates. PrayNow only uses your location on-device and never sends it to any server. You can also set your location manually in Settings → Location.</p>
+        </details>
+
+        <details>
+            <summary>Can I use the app without granting location permission?</summary>
+            <p>Yes. Go to Settings → Location and search for your city manually. The app will use that location for all calculations.</p>
+        </details>
+
+        <details>
+            <summary>How does the Qadha tracker sync across devices?</summary>
+            <p>Qadha records sync through your private iCloud account via CloudKit. Make sure you're signed into the same Apple ID on all devices and iCloud is enabled for PrayNow.</p>
+        </details>
+
+        <details>
+            <summary>How do I adjust the Hijri date?</summary>
+            <p>Go to Settings → Calendar → Hijri Adjustment. You can adjust by ±2 days to match your local moon sighting.</p>
+        </details>
+
+        <details>
+            <summary>Is PrayNow really free? What's the catch?</summary>
+            <p>There is no catch. PrayNow is 100% free with no in-app purchases, no subscriptions, no ads, and no data collection. It was made as a service for the Muslim community.</p>
+        </details>
+
+        <details>
+            <summary>What languages does PrayNow support?</summary>
+            <p>English, Arabic, Farsi (Persian), French, Turkish, Urdu, Indonesian, and Malay. The app follows your device language automatically.</p>
+        </details>
+
+        <!-- Links -->
+        <h2>Legal</h2>
+        <p>
+            <a href="https://abbasmusawis.github.io/PrayNow/privacy.html">Privacy Policy</a> · 
+            <a href="https://abbasmusawis.github.io/PrayNow/terms.html">Terms of Use</a>
+        </p>
+
+        <div class="footer">
+            <p>&copy; 2026 PrayNow. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
